@@ -298,6 +298,25 @@ a {
   flex-wrap: wrap;
 }
 
+.business-img {
+  position: relative;
+}
+
+.business-img-design {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* Наша Команда */
 .section-team {
   background-color: var(--background-team-color);
@@ -506,7 +525,37 @@ a {
   flex-wrap: wrap;
 }
 .portfolio-item {
+  position: relative;
   margin-top: 30px;
   border: 1px solid rgba(238, 238, 238, 1);
   max-width: 370px;
+}
+
+.item-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-img-capture {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: 250ms;
+}
+
+.item-img-capture-text {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.item:hover .item-img-capture {
+  top: 0%;
 }
