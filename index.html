@@ -24,7 +24,7 @@
             >Web<span class="logo-header">Studio</span></a
           >
           <ul class="navigation-menu">
-            <li class="menu-item">
+            <li class="menu-item underline">
               <a href="./index.html" class="navigation-menu-link active"
                 >Студия</a
               >
@@ -60,7 +60,14 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button-hero">Заказать услугу</button>
+          <button type="button" class="button-hero" data-modal-open>
+            Заказать услугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <div class="modal-close" data-modal-close></div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Особенности -->
@@ -479,5 +486,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
